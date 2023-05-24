@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+	--tcol: #fdfdfd;
+	--tcol-2: #a36afe;
+	--bgc: #0a0a0a;
+}
+
+body {
+	background-color: var(--bgc);
+	color: var(--tcol);
+	padding: 100px 0;
+	font-family: "Roboto Mono";
+}
+
+.container {
+	margin: auto;
+	display: flex !important;
+	flex-direction: column;
+	align-items: center;
+	gap: 100px;
+	max-width: 600px;
+	width: 100%;
+}
+
+.logo-container {
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-container .logo {
+	width: 300px;
+	height: auto;
+}
+
+.links {
+	font-size: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+.link-item {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+}
+
+.link {
+	color: var(--tcol);
+	text-decoration: none;
+	transition-duration: .2s;
+	transition-property: color;
+}
+
+.link:hover,
+.link:focus {
+	color: var(--tcol-2);
+}
+
+.icon {
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.icon.insta {
+	background-image: url("icon-instagram.svg");
+	background-size: 125% auto;
+	background-position: center;
+}
+
+.icon.tg {
+	background-image: url("icon-telegram.svg");
+}
